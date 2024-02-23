@@ -1,0 +1,121 @@
+:root{
+    --color-bright-orange: hsl(31, 77%, 52%);
+    --color-dark-cyan: hsl(184, 100%, 22%);
+    --color-very-dark-cyan: hsl(179, 100%, 13%);
+    --color-paragraphs:  hsla(0, 0%, 100%, 0.75);
+    --color-light-gray:hsl(0, 0%, 95%);
+}
+
+body{
+    font-family: 'Lexend Deca';
+    min-height: 100vh;
+    background-color: var(--color-light-gray);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 19rem;
+}
+
+.card {
+    padding: 2.5rem 2.5rem 3.5rem 2.5rem;
+    color: var(--color-paragraphs);
+    font-size: .9rem;
+}
+
+
+.icon {
+    width: 3.5rem;
+    height: 2.5rem;
+}
+
+.card h2{
+    font-family: 'Big Shoulders Display';
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color:var(--color-light-gray);
+    padding-top: 1.5rem;
+}
+
+.card p {
+    padding: 1rem 0 2.2rem;
+    line-height: 1.5rem;
+}
+
+.card-first {
+    background-color: var(--color-bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.card-second {
+    background-color: var(--color-dark-cyan);
+}
+
+.card-third {
+    background-color: var(--color-very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+.btn {
+    background-color: var(--color-light-gray);
+    border-radius: 35px;
+    padding: .8rem 2rem;
+    text-decoration: none;
+    border: 2px solid var(--color-light-gray);
+    transition: all .4s ease-in-out;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color:var(--color-light-gray);
+}
+
+.btn-one{
+    color: var(--color-bright-orange);
+}
+
+.btn-two{
+    color:var(--color-dark-cyan);
+}
+
+.btn-three{
+    color:var(--color-very-dark-cyan);
+}
+
+.footer{
+    text-align: center;
+    font-size: .9rem;
+    padding-top: 1rem;
+    color: gray;
+}
+
+.footer a{
+    text-decoration: none;
+    color: var(--color-dark-cyan)
+}
+
+@media screen and (min-width:48.25rem) {
+    .container {
+        max-width: 56rem;
+        display:flex;
+    }
+
+    .card-first {
+        background-color:var(--color-bright-orange);
+        border-radius: 10px 0 0 10px;
+    }
+
+    .card-third {
+        background-color:var(--color-very-dark-cyan);
+        border-radius: 0 10px 10px 0;
+    }
+
+    .card p {
+        padding: 2rem 0 6rem;
+    }
+
+}
